@@ -132,7 +132,4 @@ exports.getByUid = async (req, res) => {
   });
 };
 
-{
-  $group: {
-  }
-}
+
