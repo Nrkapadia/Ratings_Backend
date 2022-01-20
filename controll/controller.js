@@ -125,11 +125,19 @@ exports.getByUid = async (req, res) => {
     }
   );
 
-  res.status(200).json({
-    status: "success",
-    message: "Founded",
-    result: userData,
-  });
+  if (userData.length !== 0) {
+    res.status(200).json({
+      status: "success",
+      isGiven: true,
+      result: userData,
+    });
+  } else {
+    res.status(200).json({
+      status: "success",
+      isGiven: false,
+      result: userData,
+    });
+  }
 };
 
 
