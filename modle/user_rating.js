@@ -13,7 +13,8 @@ const user_rating = new Schema({
       //jo rating de raha hai voh
       by_uid: {
         type: Number,
-        required: true,unique:true,
+        required: true,
+        unique:true,
       },
       ratings: {
         type: Number,
