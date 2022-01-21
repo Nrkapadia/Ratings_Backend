@@ -4,6 +4,6 @@ const ratingController = require("./../controll/controller");
 
 router.route("/").get(ratingController.getAll).post(ratingController.createOne);
 
-router.route("/getOne").post(ratingController.getByUid);
+router.route("/getOne").put(ratingController.getByUid);
 
 module.exports = router;
