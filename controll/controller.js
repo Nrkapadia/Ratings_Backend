@@ -54,7 +54,7 @@ exports.createOne = async (req, res) => {
       // ahiya thi tane index madse
       const index = obj_uid.findIndex((data) => {
         return (
-          data.by_uid === req.body.obj_uid && data.ratings !== req.body.ratings
+          data.by_uid === req.body.obj_uid 
         );
       });
       //console.log(index);
