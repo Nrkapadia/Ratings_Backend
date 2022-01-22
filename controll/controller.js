@@ -121,6 +121,8 @@ exports.getByUid = async (req, res) => {
     },
     {
       _id: 0,
+      avg_rating:1,
+      count:1,
       obj_uid: { $elemMatch: { by_uid: by_uid } },
     }
   );
